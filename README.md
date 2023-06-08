@@ -13,10 +13,13 @@ your performance based off the deck will be tracked and saved for a later sessio
 ![ERD Schema](schema.png)
 
 One to Many
+
 1 user can have many decks
 
 One to Many
+
 1 deck can have multiple cards
 
 Many to Many
+
 Many decks can have a history of many users (user_deck_history merge table)
