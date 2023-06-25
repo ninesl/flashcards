@@ -39,9 +39,9 @@ public class JdbcCardDao implements CardDao{
         try {
             card_id = jdbcTemplate.queryForObject(sql, Long.class, card.getQuestion(), card.getAnswer(), card.getImage(), card.getDeckId());
             System.out.println(card_id);
-            card.setCardId(card_id);
+//            card.setCardId(card_id);
         } catch(DataAccessException e){
-            System.out.println("got here");
+            System.out.println(e.getMessage());
             return null;
         }
         return card;

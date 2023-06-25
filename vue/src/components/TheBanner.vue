@@ -2,20 +2,27 @@
   <div class="banner-conatiner">
         <div class="banner-text-block">
             <div class="last-title-btn"> 
-                <h2 class="fr-last-title">Start creating your own flashcards today!</h2>
-                <button v-on:click="goToRegister" id="last-btn-shaped">Register</button>
+                <h2 class="fr-last-title">Flashcard Portfolio Demo SaaS Project</h2>
             </div>
-            <h2 class="banner-f-title">Students who use Ninja FlashCards are very happy with the overall experience</h2>
             <div class="banner-first-row">
                 <div class="fr-column">
-                    <h2 class="fr-title">Engaging Content</h2>
                     <h3 class="fr-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </h3>
-                    <h2 class="fr-title">Ninja Decks</h2>
-                    <h3 class="fr-content">
-                        Decks can be set to unlisted to share with your peers, but not public to view!
-                        Consider this "Ninja-mode"!
+                        <p>Hello and thank you for taking the time to visit our site! My name is Lance Nines and 
+                        I'm excited to share with you a project that I worked on during my time at Tech Elevator. 
+                        This web application was developed in collaboration with my classmates in an Agile environment.</p>
+                        <p>As a member of our Agile team of five developers, I played an integral role in designing and implementing the backend logic of our web application using Spring Boot.
+                        We followed the MVC design pattern and coordinated project aspects to deliver MVP features for a product owner through personal sprints.
+                        We had daily standup meetings to go over our progress with our project manager, who was an instructor at Tech Elevator.
+                        Our team designed a REST API that enables access to a PostgreSQL database for CRUD operations and implemented responsive UI/UX design principles in the Vue.js frontend.</p>
+                        <p>I was responsible for setting up the REST API in Java using Spring Boot and creating the CRUD operations for the REST API.
+                        I also worked very closely with my teammates to integrate components of the Vue.js frontend.
+                        We placed a strong emphasis on pair-programming and integration testing to ensure that all components of the web application worked seamlessly together.
+                        Through our collaborative efforts, we were able to deliver a well-rounded web application that met our project goals.</p>
+                        <p>Since completing the project, I have continued to expand my skills by learning how to deploy this app as a SaaS application on Google Cloud using App Engine and containerization with Docker.
+                        I have migrated my pgAdmin database to a Cloud SQL instance and updated my Spring Boot app's configuration to use Cloud SQL for database access.
+                        The logic for creating, storing, editing, and testing decks is handled by the backend and stored in a Cloud SQL database.</p> 
+                        <p>This project showcases my ability to work in a team environment and utilize modern development tools and techniques.
+                        Please check out the <a class="external-link"  target="_blank" href="https://github.com/ninesl/flashcards">github repo here</a>!</p>
                     </h3>
                 </div>
                 <div class="fr-image" id="fr-img">
@@ -40,6 +47,14 @@ export default {
 </script>
 
 <style scoped>
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+.external-link {
+    color: blue;
+}
+
 #desk-notebook {
     border-radius: 10px;
     box-shadow: 2px 3px 5px;
@@ -47,7 +62,7 @@ export default {
 }
 .banner-f-title {
     text-align: center;
-    text-shadow: 6px 6px 10px rgba(57, 158, 57, 0.76);
+    text-shadow: 1px 1px 1px rgba(57, 158, 57, 0.76);
     font-size: 2em;
 
 }
@@ -55,7 +70,7 @@ export default {
 .banner-first-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
     overflow: hidden;
 }
@@ -67,6 +82,7 @@ export default {
     width: 50%;
 }
 .fr-image {
+    margin-left: 5%;
     width: 50%;
 }
 
@@ -79,7 +95,7 @@ export default {
 
 .fr-last-title{
     text-align: center;
-    text-shadow: 6px 6px 10px rgba(57, 158, 57, 0.76);
+    text-shadow: 3px 3px 5px rgba(57, 158, 57, 0.76);
     font-size: 2em;
 }
 
@@ -101,6 +117,7 @@ export default {
         align-items: center;
     }
     .fr-column, .fr-image {
+        margin: 10px;
         width: 100%;
         padding: 0;
     }

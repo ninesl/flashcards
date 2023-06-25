@@ -26,7 +26,7 @@ html {
   font-family: 'Fredoka', sans-serif;
 }
 body {
-  background-color: rgb(229, 255, 229);
+  background-color: rgb(231, 246, 231);
 }
 #active{ 
   background: whitesmoke;
@@ -58,6 +58,16 @@ button:hover {
   margin: 10px;
 }
 
+/* Make something not able to be highlighted */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
 
 /* LOGIN AND REGISTER STYLING */
 .signin-input {

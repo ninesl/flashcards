@@ -23,3 +23,15 @@ One to Many
 Many to Many
 
 Many decks can have a history of many users (user_deck_history merge table)
+
+![Public Decks](public_decks.jpg)
+When you look at public decks, you can see all decks that are marked public. The brain
+signifies how well you've done when you've previously saved your score, Red means you need work,
+Yellow means you're doing okay, Green means you are good on that topic.
+You can also see an edit button for the decks where you are the owner, I'm signed in as Lance in this screenshot.
+
+![Edit Deck](edit_deck.jpg)
+Here you can change all aspects of the deck, including if it is private, unlisted or public.
+Public will have the deck show on the public decks page.
+Unlisted means that anyone can access the deck, but only if they have the link to it.
+Private means that only the owner can access it, and it will only show up on My Decks.

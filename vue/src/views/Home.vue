@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <TheHero></TheHero>
+    <!-- <TheHero></TheHero> -->
     <TheBanner></TheBanner>
   </div>
 </template>
 
 <script>
-import TheHero from '@/components/TheHero.vue'
+// import TheHero from '@/components/TheHero.vue'
 import TheBanner from '@/components/TheBanner.vue'
 
 export default {
@@ -17,7 +17,7 @@ export default {
     }
   },
   components: {
-    TheHero,
+    // TheHero,
     TheBanner
   }
 };

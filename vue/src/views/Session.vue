@@ -4,7 +4,7 @@
       <h2>{{this.deckName}}</h2> 
       <h3>{{this.deckDesc}}</h3> 
     </div>
-    <div class="quiz">
+    <div class="quiz noselect">
       <div class="active" v-if="currentIndex < cards.length">
         <card class="current-card" v-bind:card="cards[currentIndex]" @update-score="nextQuestion"/>
       </div>

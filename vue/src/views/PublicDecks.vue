@@ -30,7 +30,7 @@ export default {
       this.decks = response.data;
       setTimeout(() => {
         this.isLoading = false;
-      }, 2000);
+      }, 500);
     });
   }
 };

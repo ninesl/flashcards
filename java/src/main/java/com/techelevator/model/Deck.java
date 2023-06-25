@@ -14,7 +14,7 @@ public class Deck {
     @NotNull
     private String deckDesc;
     @NotNull
-    private int status; //1-Private 2-Pending 3-Public
+    private int status; //1-Private 2-Unlisted 3-Public
 
     //DEFAULT CONSTRUCTOR
     public Deck(){}
